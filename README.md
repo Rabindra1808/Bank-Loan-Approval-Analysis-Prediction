@@ -22,23 +22,44 @@ Dynamic filters:
 
 
 KPI Metrics:
+<ul>
+  <li>Total Applicants</li>
+  <li>Average Loan Amount</li>
+  <li>Approval Rate %</li>
+</ul>
 
-Total Applicants
-
-Average Loan Amount
-
-Approval Rate %
 
 <h3>🤖 2. Loan Approval Prediction Engine</h3>
 <ul>
   <li>Logistic Regression Model</li>
   <li>Custom feature engineering:
-    <li>TotalIncome = ApplicantIncome + CoapplicantIncome</li>
-    <li>LoanToIncomeRatio = LoanAmount / TotalIncome</li>
+      TotalIncome = ApplicantIncome + CoapplicantIncome
+      LoanToIncomeRatio = LoanAmount / TotalIncome
   </li>
-  <li></li>
-  <li></li>
+  <li>Real-time approval prediction</li>
+  <li>Clean success / rejection UI output</li>
   
+</ul>
+
+
+<h3>🧠 3. Business Logic Used</h3>
+
+Loan approval is primarily influenced by:
+<ul>
+  <li>✅ Credit History (Strongest Factor)</li>
+  <li>✅ Loan-to-Income Ratio (< 0.35 improves approval chances)
+</li>
+</ul>
+
+This mimics simplified real-world banking risk rules.
+
+<h3>🛠 Tech Stack</h3>
+<ul>
+  <li>Python</li>
+  <li>Streamlit</li>
+  <li>Pandas</li>
+  <li>Scikit-learn (Logistic Regression)</li>
+  <li>Custom Feature Engineering</li>
 </ul>
 
 
@@ -48,28 +69,3 @@ Approval Rate %
 
 
 
-Real-time approval prediction
-
-Clean success / rejection UI output
-
-🧠 3. Business Logic Used
-
-Loan approval is primarily influenced by:
-
-✅ Credit History (Strongest Factor)
-
-✅ Loan-to-Income Ratio (< 0.35 improves approval chances)
-
-This mimics simplified real-world banking risk rules.
-
-🛠 Tech Stack
-
-Python
-
-Streamlit
-
-Pandas
-
-Scikit-learn (Logistic Regression)
-
-Custom Feature Engineering
